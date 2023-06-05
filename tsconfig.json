@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "jsx": "preserve",
+        "noUnusedLocals": false,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        // "lib": ["ESNext", "DOM"],
+        "skipLibCheck": true,
+        "noEmit": true,
+        "baseUrl": "./", // 解析非相对模块的基地址，默认是当前目录
+        "paths": {
+            //路径映射，相对于baseUrl
+            "@/*": ["src/*"]
+        },
+        "types": ["vite/client"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+}
